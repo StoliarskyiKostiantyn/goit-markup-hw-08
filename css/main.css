@@ -68,10 +68,28 @@ img {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo-link {
@@ -173,31 +191,22 @@ img {
 }
 
 .hero {
-  background-color: var(--f-color);
   display: flex;
   flex-direction: column;
-  padding-top: 200px;
-  padding-bottom: 200px;
   align-content: center;
   align-items: center;
-  max-height: 600px;
-  max-width: 1600px;
-  margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herobg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--f-color);
 }
 
 .hero-title {
   font-family: var(--font-family-1);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--p-dark-t-color);
-  max-width: 696px;
   margin-bottom: 30px;
 }
 
@@ -220,6 +229,72 @@ img {
   padding-right: 32px;
   min-width: 200px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 767px), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 767px), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_tablet-1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_tablet-2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_desk-1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero-title {
+    font-family: var(--font-family-1);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--p-dark-t-color);
+    max-width: 696px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-width: 1200px) and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_desk-2x.jpg");
+  }
 }
 
 .advanteges.container {
