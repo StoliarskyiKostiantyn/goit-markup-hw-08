@@ -11,24 +11,35 @@
 </head>
 <body>
     <!-- Шапка сайта -->
-       <!--<header class="header-section">
-           <div class="header container"> <nav class="navigation"> 
-            <a href="./" aria-label="логотип сайта" class="logo-link"><span lang="en" class="logo-text">Web</span><span lang="en" class="">Studio</span></a>
-            <ul class="nav-list">
-                <li class="nav-list-item"><a href="" class="nav-link"><span class="current">Студия</span></a></li>
-                <li class="nav-list-item"><a href="./portfolio.html" class="nav-link"><span>Портфолио</span></a></li>
-                <li class="nav-list-item"><a href="" class="nav-link"><span>Контакты</span></a></li>
-             </ul>                            
-    </nav>
-    <ul class="nav-list adress">  
-        <li class="nav-list-item"><a href="mailto:info@devstudio.com" lang="en" class="nav-tel"><svg class="nav-list-icon" width="16" height="12"><use href="./images/sprite.svg#icon-envelope">
-            </use></svg>
+<header class="header-section">
+<div class="header container"> 
+<nav class="navigation"> 
+<a href="./" aria-label="логотип сайта" class="logo-link"><span lang="en" class="logo-text">Web</span><span lang="en" class="">Studio</span></a>
+<div class="menu-container" id="menu-container" data-menu>
+<ul class="nav-list">
+ <li class="nav-list-item"><a href="" class="nav-link"><span class="current">Студия</span></a></li>
+ <li class="nav-list-item"><a href="./portfolio.html" class="nav-link"><span>Портфолио</span></a></li>
+ <li class="nav-list-item"><a href="" class="nav-link"><span>Контакты</span></a></li>
+</ul>                            
+<ul class="nav-list adress">  
+<li class="nav-list-item"><a href="mailto:info@devstudio.com" lang="en" class="nav-tel">
+<svg class="nav-list-icon" width="16" height="12"><use href="./images/sprite.svg#icon-envelope">
+</use></svg>
             <span>info@devstudio.com</span></a></li>
         <li class="nav-list-item"><a href="tel:+380961111111" class="nav-tel">
             <svg class="nav-list-icon" width="10" height="16"><use href="./images/sprite.svg#icon-smartphone">
         </use></svg><span class="telephone">+38 096 111 11 11</span></a></li>
-    </ul></div>
-        </header>  --> 
+</ul>
+</div>
+<button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use class="icon-menu" href="./images/menu_burger.svg#icon-menu"></use>
+        <use class="icon-menu_close" href="./images/menu_burger.svg#icon-menu_close"></use> class="icon-menu"
+    </svg>
+</button>
+</nav>
+</div>
+</header>
     <!-- Главная секция -->
     <main>
         <!-- Герой -->
@@ -392,7 +403,7 @@
         </div>
     </footer>
 
-<!--<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
 <button type="button" class="close-btn" data-modal-close><svg width="18px" height="18px" >
     <use href="./images/sprite.svg#icon-close"></use>
@@ -426,6 +437,7 @@
 </form>
     </div>
 </div>
-<script src="./js/modal.js"></script>-->
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>

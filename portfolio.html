@@ -11,38 +11,42 @@
 </head>
 <body>
     <!-- Шапка сайта -->
-        <!--<header class="header-section">
-           <div class="header container">
-            <nav class="navigation"> 
-                <a href="./index.html" aria-label="логотип сайта" class="logo-link"><span lang="en" class="logo-text">Web</span><span lang="en" class="">Studio</span></a>
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a href="./index.html" class="nav-link"><span>Студия</span></a></li>
-                    <li class="nav-list-item"><a href="./portfolio.html" class="nav-link"><span class="current">Портфолио</span></a></li>
-                    <li class="nav-list-item"><a href="" class="nav-link"><span>Контакты</span></a></li>
-                 </ul>                            
-        </nav>
-        <ul class="nav-list adress">  
-            <li class="nav-list-item"><a href="mailto:info@devstudio.com" lang="en" class="nav-tel"><svg class="nav-list-icon" width="16" height="12"><use href="./images/sprite.svg#icon-envelope">
-                </use></svg>
-                <span>info@devstudio.com</span></a></li>
-            <li class="nav-list-item"><a href="tel:+380961111111" class="nav-tel"><svg class="nav-list-icon" width="10" height="16"><use href="./images/sprite.svg#icon-smartphone">
-            </use></svg><span class="telephone">+38 096 111 11 11</span></a></li>
-        </ul>
-           </div>
-
-<button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container"
-data-menu-button>
+<header class="header-section">
+<div class="header container">
+<nav class="navigation"> 
+<a href="./index.html" aria-label="логотип сайта" class="logo-link"><span lang="en" class="logo-text">Web</span><span lang="en" class="">Studio</span></a>
+<div class="menu-container" id="menu-container" data-menu>
+<ul class="nav-list">
+    <li class="nav-list-item">
+        <a href="./index.html" class="nav-link"><span>Студия</span></a>
+    </li>
+    <li class="nav-list-item"><a href="./portfolio.html" class="nav-link"><span class="current">Портфолио</span></a>
+    </li>
+    <li class="nav-list-item"><a href="" class="nav-link"><span>Контакты</span></a></li>
+</ul>
+<ul class="nav-list adress">
+    <li class="nav-list-item"><a href="mailto:info@devstudio.com" lang="en" class="nav-tel">
+            <svg class="nav-list-icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+            </svg>
+            <span>info@devstudio.com</span></a></li>
+    <li class="nav-list-item"><a href="tel:+380961111111" class="nav-tel">
+            <svg class="nav-list-icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+            </svg>
+            <span class="telephone">+38 096 111 11 11</span></a></li>
+</ul>
+</div>
+<button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
     <svg width="40" height="40" aria-label="Переключатель мобильного меню">
         <use class="icon-menu" href="./images/menu_burger.svg#icon-menu"></use>
-        <use class="icon-menu_close" href="./images/menu_burger.svg#icon-menu_close"></use> class="icon-menu" 
+        <use class="icon-menu_close" href="./images/menu_burger.svg#icon-menu_close"></use> class="icon-menu"
     </svg>
 </button>
-
-<div class="menu-container" id="menu-container" data-menu>
-    Контент Меню
-
+</nav>
 </div>
-        </header>-->
+
+</header>
     <!-- Главная секция -->
    <main>
     <section class="portfolio">
@@ -59,10 +63,10 @@ data-menu-button>
                 <a href="#" class="portfolio-card-link">
                 <div class="portfolio-img">
                 <picture>
-                <source srcset="./images/portfoliocards/img11-d1х.jpg 1x, ./images/portfoliocards/img11-d2х.jpg 2x" media="(min-width: 1200px)"/>
-                <source srcset="./images/portfoliocards/img11-t1x.jpg 1x, ./images/portfoliocards/img11-t2х.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
-                <source srcset="./images/portfoliocards/img11-1х.jpg 1x, ./images/portfoliocards/img11-2х.jpg 2x" media="(max-width: 767px)" />
-                <img src="./images/portfoliocards/img11.jpg" alt="Пример работы" />
+                <source srcset="./images/portfoliocards/imgp1d_1x.jpg 1x, ./images/portfoliocards/imgp1d_2x.jpg 2x" media="(min-width: 1200px)"/>
+                <source srcset="./images/portfoliocards/imgp1t_1x.jpg 1x, ./images/portfoliocards/imgp1t_2x.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./images/portfoliocards/imgp1_1х.jpg 1x, ./images/portfoliocards/imgp1_2х.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/portfoliocards/imgp1.jpg" alt="Пример работы" />
                 </picture>
                 <div class="portfolio-overlay">
                 <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -82,13 +86,13 @@ data-menu-button>
                 <a href="#" class="portfolio-card-link">
                     <div class="portfolio-img">
                         <picture>
-                            <source srcset="./images/portfoliocards/img22-1х.jpg 1x, ./images/portfoliocards/img22-2х.jpg 2x"
-                                media="(max-width: 767px)" />
-                            <source srcset="./images/portfoliocards/img22-t1х.jpg 1x, ./images/portfoliocards/img22-t2х.jpg 2x"
-                                media="(min-width: 768px) and (max-width: 1199px)" />
-                            <source srcset="./images/portfoliocards/img22-d1х.jpg 1x, ./images/portfoliocards/img22-d2х.jpg 2x"
+                            <source srcset="./images/portfoliocards/imgp2d_1x.jpg 1x, ./images/portfoliocards/imgp2d_2x.jpg 2x"
                                 media="(min-width: 1200px)" />
-                            <img src="./images/portfoliocards/img22.jpg" alt="Пример работы" />
+                            <source srcset="./images/portfoliocards/imgp2t_1x.jpg 1x, ./images/portfoliocards/imgp2t_2x.jpg 2x"
+                                media="(min-width: 768px) and (max-width: 1199px)" />
+                            <source srcset="./images/portfoliocards/imgp2_1х.jpg 1x, ./images/portfoliocards/imgp2_2х.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images/portfoliocards/imgp2.jpg" alt="Пример работы" />
                         </picture>
                         <div class="portfolio-overlay">
                             <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -107,13 +111,13 @@ data-menu-button>
                <a href="#" class="portfolio-card-link">
                 <div class="portfolio-img">
                     <picture>
-                        <source srcset="./images/portfoliocards/img33-1х.jpg 1x, ./images/portfoliocards/img33-2х.jpg 2x"
-                            media="(max-width: 767px)" />
-                        <source srcset="./images/portfoliocards/img33-t1х.jpg 1x, ./images/portfoliocards/img33-t2х.jpg 2x"
-                            media="(min-width: 768px) and (max-width: 1199px)" />
-                        <source srcset="./images/portfoliocards/img33-d1х.jpg 1x, ./images/portfoliocards/img33-d2х.jpg 2x"
+                        <source srcset="./images/portfoliocards/imgp3d_1x.jpg 1x, ./images/portfoliocards/imgp3d_2x.jpg 2x"
                             media="(min-width: 1200px)" />
-                        <img src="./images/portfoliocards/img33.jpg" alt="Пример работы" />
+                        <source srcset="./images/portfoliocards/imgp3t_1x.jpg 1x, ./images/portfoliocards/imgp3t_2x.jpg 2x"
+                            media="(min-width: 768px) and (max-width: 1199px)" />
+                        <source srcset="./images/portfoliocards/imgp3_1х.jpg 1x, ./images/portfoliocards/imgp3_2х.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/portfoliocards/imgp3.jpg" alt="Пример работы" />
                     </picture>
                     <div class="portfolio-overlay">
                         <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -132,13 +136,13 @@ data-menu-button>
                <a href="#" class="portfolio-card-link">
                 <div class="portfolio-img">
                     <picture>
-                        <source srcset="./images/portfoliocards/img44-1х.jpg 1x, ./images/portfoliocards/img44-2х.jpg 2x"
-                            media="(max-width: 767px)" />
-                        <source srcset="./images/portfoliocards/img44-t1х.jpg 1x, ./images/portfoliocards/img44-t2х.jpg 2x"
-                            media="(min-width: 768px) and (max-width: 1199px)" />
-                        <source srcset="./images/portfoliocards/img44-d1х.jpg 1x, ./images/portfoliocards/img44-d2х.jpg 2x"
-                            media="(min-width: 1200px)" />
-                        <img src="./images/portfoliocards/img44.jpg" alt="Пример работы" />
+                    <source srcset="./images/portfoliocards/imgp4d_1x.jpg 1x, ./images/portfoliocards/imgp4d_2x.jpg 2x"
+                        media="(min-width: 1200px)" />
+                    <source srcset="./images/portfoliocards/imgp4t_1x.jpg 1x, ./images/portfoliocards/imgp4t_2x.jpg 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/portfoliocards/imgp4_1х.jpg 1x, ./images/portfoliocards/imgp4_2х.jpg 2x"
+                        media="(max-width: 767px)" />
+                    <img src="./images/portfoliocards/imgp4.jpg" alt="Пример работы" />
                     </picture>
                     <div class="portfolio-overlay">
                         <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -157,13 +161,13 @@ data-menu-button>
                <a href="#" class="portfolio-card-link">
                 <div class="portfolio-img">
                     <picture>
-                        <source srcset="./images/portfoliocards/img55-1х.jpg 1x, ./images/portfoliocards/img55-2х.jpg 2x"
-                            media="(max-width: 767px)" />
-                        <source srcset="./images/portfoliocards/img55-t1х.jpg 1x, ./images/portfoliocards/img55-t2х.jpg 2x"
-                            media="(min-width: 768px) and (max-width: 1199px)" />
-                        <source srcset="./images/portfoliocards/img55-d1х.jpg 1x, ./images/portfoliocards/img55-d2х.jpg 2x"
+                        <source srcset="./images/portfoliocards/imgp5d_1x.jpg 1x, ./images/portfoliocards/imgp5d_2x.jpg 2x"
                             media="(min-width: 1200px)" />
-                        <img src="./images/portfoliocards/img55.jpg" alt="Пример работы" />
+                        <source srcset="./images/portfoliocards/imgp5t_1x.jpg 1x, ./images/portfoliocards/imgp5t_2x.jpg 2x"
+                            media="(min-width: 768px) and (max-width: 1199px)" />
+                        <source srcset="./images/portfoliocards/imgp5_1х.jpg 1x, ./images/portfoliocards/imgp5_2х.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/portfoliocards/imgp5.jpg" alt="Пример работы" />
                     </picture>
                     <div class="portfolio-overlay">
                         <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -182,13 +186,13 @@ data-menu-button>
                <a href="#" class="portfolio-card-link">
                 <div class="portfolio-img">
                     <picture>
-                        <source srcset="./images/portfoliocards/img66-1х.jpg 1x, ./images/portfoliocards/img66-2х.jpg 2x"
-                            media="(max-width: 767px)" />
-                        <source srcset="./images/portfoliocards/img66-t1х.jpg 1x, ./images/portfoliocards/img66-t2х.jpg 2x"
-                            media="(min-width: 768px) and (max-width: 1199px)" />
-                        <source srcset="./images/portfoliocards/img66-d1х.jpg 1x, ./images/portfoliocards/img66-d2х.jpg 2x"
+                        <source srcset="./images/portfoliocards/imgp6d_1x.jpg 1x, ./images/portfoliocards/imgp6d_2x.jpg 2x"
                             media="(min-width: 1200px)" />
-                        <img src="./images/portfoliocards/img66.jpg" alt="Пример работы" />
+                        <source srcset="./images/portfoliocards/imgp6t_1x.jpg 1x, ./images/portfoliocards/imgp6t_2x.jpg 2x"
+                            media="(min-width: 768px) and (max-width: 1199px)" />
+                        <source srcset="./images/portfoliocards/imgp6_1х.jpg 1x, ./images/portfoliocards/imgp6_2х.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/portfoliocards/imgp6.jpg" alt="Пример работы" />
                     </picture>
                     <div class="portfolio-overlay">
                         <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -207,13 +211,13 @@ data-menu-button>
                 <a href="#" class="portfolio-card-link">
                     <div class="portfolio-img">
                         <picture>
-                            <source srcset="./images/portfoliocards/img77-1х.jpg 1x, ./images/portfoliocards/img77-2х.jpg 2x"
-                                media="(max-width: 767px)" />
-                            <source srcset="./images/portfoliocards/img77-t1х.jpg 1x, ./images/portfoliocards/img77-t2х.jpg 2x"
-                                media="(min-width: 768px) and (max-width: 1199px)" />
-                            <source srcset="./images/portfoliocards/img77-d1х.jpg 1x, ./images/portfoliocards/img77-d2х.jpg 2x"
+                            <source srcset="./images/portfoliocards/imgp7d_1x.jpg 1x, ./images/portfoliocards/imgp7d_2x.jpg 2x"
                                 media="(min-width: 1200px)" />
-                            <img src="./images/portfoliocards/img77.jpg" alt="Пример работы" />
+                            <source srcset="./images/portfoliocards/imgp7t_1x.jpg 1x, ./images/portfoliocards/imgp7t_2x.jpg 2x"
+                                media="(min-width: 768px) and (max-width: 1199px)" />
+                            <source srcset="./images/portfoliocards/imgp7_1х.jpg 1x, ./images/portfoliocards/imgp7_2х.jpg 2x"
+                                media="(max-width: 767px)" />
+                            <img src="./images/portfoliocards/imgp7.jpg" alt="Пример работы" />
                         </picture>
                         <div class="portfolio-overlay">
                             <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -232,13 +236,13 @@ data-menu-button>
                 <a href="#" class="portfolio-card-link">
                 <div class="portfolio-img">
                     <picture>
-                        <source srcset="./images/portfoliocards/img88-1х.jpg 1x, ./images/portfoliocards/img88-2х.jpg 2x"
-                            media="(max-width: 767px)" />
-                        <source srcset="./images/portfoliocards/img88-t1х.jpg 1x, ./images/portfoliocards/img88-t2х.jpg 2x"
-                            media="(min-width: 768px) and (max-width: 1199px)" />
-                        <source srcset="./images/portfoliocards/img88-d1х.jpg 1x, ./images/portfoliocards/img88-d2х.jpg 2x"
+                        <source srcset="./images/portfoliocards/imgp8d_1x.jpg 1x, ./images/portfoliocards/imgp8d_2x.jpg 2x"
                             media="(min-width: 1200px)" />
-                        <img src="./images/portfoliocards/img88.jpg" alt="Пример работы" />
+                        <source srcset="./images/portfoliocards/imgp8t_1x.jpg 1x, ./images/portfoliocards/imgp8t_2x.jpg 2x"
+                            media="(min-width: 768px) and (max-width: 1199px)" />
+                        <source srcset="./images/portfoliocards/imgp8_1х.jpg 1x, ./images/portfoliocards/imgp8_2х.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="./images/portfoliocards/imgp8.jpg" alt="Пример работы" />
                     </picture>
                     <div class="portfolio-overlay">
                         <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -257,13 +261,13 @@ data-menu-button>
                <a href="#" class="portfolio-card-link">
                 <div class="portfolio-img">
                     <picture>
-                        <source srcset="./images/portfoliocards/img99-1х.jpg 1x, ./images/portfoliocards/img99-2х.jpg 2x"
-                            media="(max-width: 767px)" />
-                        <source srcset="./images/portfoliocards/img99-t1х.jpg 1x, ./images/portfoliocards/img99-t2х.jpg 2x"
-                            media="(min-width: 768px) and (max-width: 1199px)" />
-                        <source srcset="./images/portfoliocards/img99-d1х.jpg 1x, ./images/portfoliocards/img99-d2х.jpg 2x"
-                            media="(min-width: 1200px)" />
-                        <img src="./images/portfoliocards/img99.jpg" alt="Пример работы" />
+                    <source srcset="./images/portfoliocards/imgp9d_1x.jpg 1x, ./images/portfoliocards/imgp9d_2x.jpg 2x"
+                        media="(min-width: 1200px)" />
+                    <source srcset="./images/portfoliocards/imgp9t_1x.jpg 1x, ./images/portfoliocards/imgp9t_2x.jpg 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="./images/portfoliocards/imgp9_1х.jpg 1x, ./images/portfoliocards/imgp9_2х.jpg 2x"
+                        media="(max-width: 767px)" />
+                    <img src="./images/portfoliocards/imgp9.jpg" alt="Пример работы" />
                     </picture>
                     <div class="portfolio-overlay">
                         <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
