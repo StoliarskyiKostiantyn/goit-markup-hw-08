@@ -1,0 +1,23 @@
+.section-title {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family-1);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--h-text-color);
+}
+@media screen and (min-width: 480px) and (max-width: 1190px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 1.179;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.167;
+    margin-bottom: 50px;
+  }
+}
