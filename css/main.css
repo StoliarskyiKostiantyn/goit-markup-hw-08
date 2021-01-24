@@ -92,15 +92,6 @@ img {
   }
 }
 
-.logo-link {
-  font-family: var(--font-family-2);
-  font-weight: var(--font-bold);
-  font-size: var(--font-logo);
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  margin-right: 95px;
-}
-
 .header,
 .navigation,
 .nav-list {
@@ -138,7 +129,6 @@ img {
 }
 
 .current,
-.logo-text,
 .nav-link:focus,
 .nav-link:hover,
 .nav-tel:focus,
@@ -632,9 +622,8 @@ img {
   padding-bottom: 60px;
 }
 
-.footer .container {
-  display: flex;
-  max-height: 252px;
+.footer .text-dark-theme {
+  color: var(--p-dark-t-color);
 }
 
 .footer .contacts-list {
@@ -649,54 +638,57 @@ img {
   background-color: var(--accent-color);
 }
 
+.footer .contacts-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.footer .adress-link {
+  font-family: var(--font-family-1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--font-size-main);
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--p-dark-t-color);
+}
+
+.footer .mail-link {
+  font-family: var(--font-family-1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--font-size-main);
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--f-link-color);
+}
+
+.footer .tel-link {
+  font-family: var(--font-family-1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--font-size-main);
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--f-link-color);
+}
+
 .footer-adress {
-  width: max-content;
-  height: max-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
 }
 
-.contacts-list-item:not(:last-child) {
-  margin-bottom: 9px;
+.footer .join-block {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
-.text-dark-theme {
-  color: var(--p-dark-t-color);
-}
-
-.adress-link {
-  font-family: var(--font-family-1);
-  font-weight: var(--font-normal);
-  font-style: normal;
-  font-size: var(--font-size-main);
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--p-dark-t-color);
-}
-
-.mail-link {
-  font-family: var(--font-family-1);
-  font-weight: var(--font-normal);
-  font-style: normal;
-  font-size: var(--font-size-main);
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--f-link-color);
-}
-
-.tel-link {
-  font-family: var(--font-family-1);
-  font-weight: var(--font-normal);
-  font-style: normal;
-  font-size: var(--font-size-main);
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--f-link-color);
-}
-
-.join-title {
+.footer .join-title {
   font-family: var(--font-family-1);
   font-style: normal;
-  font-weight: var(--font-bold);
-  text-align: left;
+  font-weight: 700;
+  text-align: center;
   font-size: var(--font-size-main);
   line-height: 1.143;
   letter-spacing: 0.03em;
@@ -704,47 +696,40 @@ img {
   color: var(--p-dark-t-color);
 }
 
-.join-block {
-  margin-top: 12px;
-  margin-left: 70px;
-}
-
-.sub-form {
-  margin-top: 12px;
-  margin-left: 93px;
-}
-
-.sub-form-text {
+.footer .sub-form-text {
   font-family: var(--font-family-1);
   font-style: normal;
-  font-weight: var(--font-bold);
+  font-weight: 700;
   font-size: var(--font-size-main);
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--p-dark-t-color);
   margin-bottom: 20px;
 }
 
-.sub-form-mail-input {
-  width: 358px;
+.footer .sub-form-mail-input {
+  width: 450px;
   height: 50px;
   border: 1px solid var(--f-input-color);
   border-radius: 4px;
   background-color: var(--f-color);
-  margin-right: 12px;
   color: var(--f-input-color);
+  margin-bottom: 20px;
 }
 
-.sub-form-mail-input:focus {
+.footer .sub-form-mail-input:focus {
   outline: none;
 }
 
-.sub-form-wrapper {
+.footer .sub-form-wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.sub-form-btn {
+.footer .sub-form-btn {
   display: flex;
   justify-content: space-around;
   background-color: var(--accent-color);
@@ -764,6 +749,79 @@ img {
   padding-bottom: 10px;
   padding-left: 28px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .footer-adress {
+    width: 50%;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+  }
+  .footer .join-block {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+  }
+  .footer .sub-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    max-height: 252px;
+  }
+  .footer .contacts-list {
+    margin-top: 20px;
+  }
+  .footer-adress {
+    align-items: flex-start;
+    width: max-content;
+    height: max-content;
+  }
+  .footer .contacts-list-item {
+    text-align: left;
+  }
+  .footer .contacts-list-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer .join-block {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
+  .footer .sub-form {
+    margin-top: 12px;
+    margin-left: 93px;
+  }
+  .footer .sub-form-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer .sub-form-mail-input {
+    margin-right: 12px;
+    margin-bottom: 0px;
+  }
+  .footer .sub-form-text,
+  .footer .join-title {
+    text-align: left;
+  }
+  .footer .sub-form-mail-input {
+    width: 358px;
+  }
 }
 
 .backdrop {
@@ -1019,5 +1077,29 @@ img {
 .social-link:hover .social-link-icon,
 .social-link:focus .social-link-icon {
   fill: var(--p-dark-t-color);
+}
+
+.logo-link {
+  font-family: var(--font-family-2);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.logo-text {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .logo-link {
+    font-size: 24px;
+    line-height: 1.167;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .logo-link {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -74,20 +74,28 @@
       <section class="whatwedo container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="whatwedo-list">
-                <li class="whatwedo-list-item">
-                    <img  src="./images/whatwedo/img.1-1x.jpg" 
-                    srcset="./images/whatwedo/img.1-2x.jpg x2" 
-                    alt="разработчик за работой">
+                <li class="whatwedo-list-item">        
+                  <picture>
+                  <source srcset="./images/whatwedo/img.1-1x.jpg 1x, ./images/whatwedo/img.1-2x.jpg 2x," media="(min-width: 1200px)">
+                  <img src="./images/whatwedo/img.1.jpg" alt="разработчик за работой"/>
+                  </picture>
               <div  class="whatwedo-item-text-wraper"><p class="whatwedo-item-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p></div> 
                 </li>
                 <li class="whatwedo-list-item">
-            <img src="./images/whatwedo/img.2-1x.jpg" srcset="./images/whatwedo/img.2-2x.jpg x2" alt="разработчик за работой">
+                 <picture>
+                <source srcset="./images/whatwedo/img.2-1x.jpg 1x, ./images/whatwedo/img.2-2x.jpg 2x," media="(min-width: 1200px)">
+                <img src="./images/whatwedo/img.2.jpg" alt="разработчик за работой" />
+                 </picture>
+
                 <div class="whatwedo-item-text-wraper">
                 <p class="whatwedo-item-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                 </div>
                 </li>
                 <li class="whatwedo-list-item">
-                <img src="./images/whatwedo/img.3-1x.jpg" srcset="./images/whatwedo/img.3-2x.jpg x2" alt="разработчик за работой">
+                    <picture>
+                        <source srcset="./images/whatwedo/img.3-1x.jpg 1x, ./images/whatwedo/img.3-2x.jpg 2x," media="(min-width: 1200px)">
+                        <img src="./images/whatwedo/img.3.jpg" alt="разработчик за работой" />
+                    </picture>
                 <div class="whatwedo-item-text-wraper">
                 <p class="whatwedo-item-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                 </div>
@@ -321,11 +329,13 @@
 
         </section>
     </main>-->
-    <!--<footer class="footer">
+    <footer class="footer">
         <div class="container">
            <div class="footer-adress">
-                <a href="./" aria-label="логотип сайта" class="logo-link"><span lang="en" class="logo-text">Web</span><span lang="en"
-                        class="text-dark-theme">Studio</span></a>
+                <a href="./" aria-label="логотип сайта" class="logo-link">
+                    <span lang="en" class="logo-text">Web</span>
+                    <span lang="en" class="text-dark-theme">Studio</span>
+                </a>
                 <address class="contacts-list">
                     <ul >
                         <li class="contacts-list-item"><a class="adress-link" href="https://goo.gl/maps/L1ehJg4MQSeb4s4E7"
@@ -380,7 +390,7 @@
        </span>
     </form>
         </div>
-    </footer>-->
+    </footer>
 
 <!--<div class="backdrop is-hidden" data-modal>
     <div class="modal">
