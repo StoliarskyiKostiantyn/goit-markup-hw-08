@@ -29,7 +29,20 @@
             </use></svg><span class="telephone">+38 096 111 11 11</span></a></li>
         </ul>
            </div>
-        </header> --> 
+
+<button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container"
+data-menu-button>
+    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use class="icon-menu" href="./images/menu_burger.svg#icon-menu"></use>
+        <use class="icon-menu_close" href="./images/menu_burger.svg#icon-menu_close"></use> class="icon-menu" 
+    </svg>
+</button>
+
+<div class="menu-container" id="menu-container" data-menu>
+    Контент Меню
+
+</div>
+        </header>-->
     <!-- Главная секция -->
    <main>
     <section class="portfolio">
@@ -46,13 +59,10 @@
                 <a href="#" class="portfolio-card-link">
                 <div class="portfolio-img">
                 <picture>
-                    <source srcset="./images/portfoliocards/img11-1х.jpg 1x, ./images/portfoliocards/img11-2х.jpg 2x"
-                        media="(max-width: 767px)" />
-                    <source srcset="./images/portfoliocards/img11-t1х.jpg 1x, ./images/portfoliocards/img11-t2х.jpg 2x"
-                        media="(min-width: 768px) and (max-width: 1199px)" />
-                    <source srcset="./images/portfoliocards/img11-d1х.jpg 1x, ./images/portfoliocards/img11-d2х.jpg 2x"
-                        media="(min-width: 1200px)" />
-                    <img src="./images/portfoliocards/img11.jpg" alt="Пример работы" />
+                <source srcset="./images/portfoliocards/img11-d1х.jpg 1x, ./images/portfoliocards/img11-d2х.jpg 2x" media="(min-width: 1200px)"/>
+                <source srcset="./images/portfoliocards/img11-t1x.jpg 1x, ./images/portfoliocards/img11-t2х.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./images/portfoliocards/img11-1х.jpg 1x, ./images/portfoliocards/img11-2х.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/portfoliocards/img11.jpg" alt="Пример работы" />
                 </picture>
                 <div class="portfolio-overlay">
                 <p class="overlay-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -332,5 +342,6 @@
 </form>
 </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
