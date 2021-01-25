@@ -110,11 +110,8 @@ img {
   font-family: var(--font-family-1);
   font-weight: 500;
   font-style: normal;
-  font-size: var(--font-accent-text);
-  line-height: 1.167;
   letter-spacing: 0.02em;
   color: var(--h-text-color);
-  margin-bottom: 40px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -133,7 +130,6 @@ img {
 
 .header .nav-list-icon {
   fill: var(--p-text-color);
-  margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -145,8 +141,6 @@ img {
 .header .nav-tel {
   font-family: var(--font-family-1);
   font-weight: 500;
-  font-size: var(--font-accent-text);
-  line-height: 1.167x;
   letter-spacing: 0.02em;
   color: var(--p-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -158,7 +152,10 @@ img {
     height: 60px;
   }
   .header .nav-list-item {
-    margin-bottom: 16px;
+    margin-bottom: 40px;
+  }
+  .header .nav-list-icon {
+    margin-right: 10px;
   }
   .header .navigation {
     display: flex;
@@ -206,8 +203,11 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
-    padding-top: 21px;
     height: 80px;
+    padding-top: 21px;
+  }
+  .logo-link {
+    margin-right: 88px;
   }
   .menu-button {
     display: none;
@@ -217,44 +217,114 @@ img {
   }
   .navigation {
     display: flex;
-    align-items: baseline;
-    justify-content: stretch;
+    align-items: center;
+  }
+  .nav-tel {
+    font-size: 12px;
+    line-height: 1.167x;
+    margin-bottom: 10px;
+    margin-right: 0;
   }
   .nav-link {
-    display: block;
-    font-family: var(--font-family-1);
-    font-weight: 500;
+    display: inline-block;
+    height: fit-content;
     font-size: var(--font-size-main);
     line-height: 1.143;
-    letter-spacing: 0.02em;
-    color: var(--h-text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .nav-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .nav-list.adress {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
   }
   .nav-list-item:not(:last-child) {
     margin-right: 50px;
   }
+  .nav-list-icon {
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+  }
+  .nav-list-icon.tel {
+    width: 10px;
+    height: 14px;
+  }
+  .nav-list {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+  }
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 82px;
+    justify-content: center;
+  }
+  .contact-list .nav-list-item {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-section {
+    border-bottom: 2px solid #ececec;
+  }
+  .header {
+    padding-top: 32px;
+    height: 80px;
+  }
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-container {
+    display: flex;
+    align-items: center;
+  }
+  .menu-button {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+  }
+  .nav-list {
+    display: flex;
+  }
   .logo-link {
-    display: inline-block;
-    margin-right: 88px;
+    display: block;
+    margin-right: 93px;
+  }
+  .nav-list-item {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+  }
+  .nav-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav-list-icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+  .nav-list-icon.tel {
+    width: 10px;
+    height: 16px;
   }
   .nav-tel {
-    font-family: var(--font-family-1);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.167x;
-    letter-spacing: 0.02em;
-    color: var(--p-text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: var(--font-size-main);
+    line-height: 1.143;
+    display: flex;
+    width: max-content;
+    height: max-content;
+    align-items: center;
+  }
+  .contact-list {
+    display: flex;
+    align-items: baseline;
+    margin-left: 305px;
+  }
+  .contact-list .nav-list-item {
+    flex-basis: content;
+  }
+  .contact-list .nav-list-item:first-child {
+    margin-right: 30px;
   }
 }
 
@@ -963,8 +1033,15 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo-link {
+    font-size: 24px;
+    line-height: 1.167;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-link {
     font-size: 26px;
-    line-height: 1.192;
+    line-height: 1.193;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
